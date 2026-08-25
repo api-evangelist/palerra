@@ -12,14 +12,12 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/palerra.png
 name: Palerra
-description: 'Palerra, Inc. was a Santa Clara, California cloud security company whose LORIC
-  platform delivered Cloud Access Security Broker (CASB) capabilities: automated security
-  monitoring, threat detection, configuration management, and compliance across SaaS and
-  IaaS environments such as Salesforce, AWS, Microsoft Office 365, ServiceNow, and Box.
-  Backed by Norwest Venture Partners and Wing Venture Capital, Palerra was acquired by
-  Oracle in September 2016 and folded into the Oracle CASB Cloud Service. The palerra.com
-  domain now redirects to Oracle''s cloud security portal, and no independent public API,
-  developer portal, or machine-readable specification remains.'
+description: 'Palerra, Inc. was a Santa Clara, California cloud security company whose LORIC platform delivered
+  Cloud Access Security Broker (CASB) capabilities: automated security monitoring, threat detection, configuration
+  management, and compliance across SaaS and IaaS environments such as Salesforce, AWS, Microsoft Office 365, ServiceNow,
+  and Box. Backed by Norwest Venture Partners and Wing Venture Capital, Palerra was acquired by Oracle in September
+  2016 and folded into the Oracle CASB Cloud Service. The palerra.com domain now redirects to Oracle''s cloud security
+  portal, and no independent public API, developer portal, or machine-readable specification remains.'
 url: https://raw.githubusercontent.com/api-evangelist/palerra/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -30,7 +28,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-08-21'
 tags:
 - Company
 - Security
@@ -46,6 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/oracle/
+  name: Oracle
+  x-relationship: acquisition
+  x-generated-by: oracle-family:2026-08-21
+  x-acquired: 2016
 - type: DomainSecurity
   url: security/palerra-domain-security.yml
 - type: GitHubOrganization
@@ -57,3 +61,6 @@ x-enrichment:
   status: minimal
   artifacts_added: 1
   pass: local-v1
+x-parent: oracle
+x-relationship: acquisition
+x-acquired: 2016
